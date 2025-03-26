@@ -186,21 +186,21 @@ export const customersText = [
     },
     {
         id:2,
-        text:'“HR Solutions are incredibly accommodating, diligent and competent. They understand the scope, needs and importance of both concerned parties within the interviewing and hiring process - That really helps with building a life and career”',
-        author:'James Thomas',
-        job:'UI Designer'
+        text:'“Black Rise has been a game-changer for our hiring process. They connected us with highly skilled professionals who perfectly fit our company culture. Our recruitment has never been more efficient!”',
+        author:'Olivia Roberts',
+        job:'CEO, SwiftTech Solutions'
     },
     {
         id:3,
-        text:'“HR Solutions are incredibly accommodating, diligent and competent. They understand the scope, needs and importance of both concerned parties within the interviewing and hiring process - That really helps with building a life and career”',
-        author:'James Thomas',
-        job:'UI Designer'
+        text:'“We struggled to find reliable employees until we partnered with Black Rise. Now, we consistently hire top-tier candidates who stay and thrive in our company. Truly the best hiring solution!”',
+        author:'Emily Carters',
+        job:'HR Manager, BrightEdge Media'
     },
     {
         id:4,
-        text:'“HR Solutions are incredibly accommodating, diligent and competent. They understand the scope, needs and importance of both concerned parties within the interviewing and hiring process - That really helps with building a life and career”',
-        author:'James Thomas',
-        job:'UI Designer'
+        text:'“As a growing startup, we needed top talent fast, and Black Rise delivered. Within weeks, we had a team of skilled professionals who helped scale our business. Highly recommended!”',
+        author:'Daniel Thompson',
+        job:'Founder, Elevate Startups'
     },
 ]
 
@@ -249,6 +249,24 @@ export const teamItems = [
     },
     {
         id:4,
+        imgUrl:'/images/h1-team04.png',
+        name:'Aiden Davis',
+        email:'miye@example.com',
+    },
+    {
+        id:5,
+        imgUrl:'/images/h1-team04.png',
+        name:'Aiden Davis',
+        email:'miye@example.com',
+    },
+    {
+        id:6,
+        imgUrl:'/images/h1-team04.png',
+        name:'Aiden Davis',
+        email:'miye@example.com',
+    },
+    {
+        id:7,
         imgUrl:'/images/h1-team04.png',
         name:'Aiden Davis',
         email:'miye@example.com',
