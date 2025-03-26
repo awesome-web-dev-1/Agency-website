@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html{
+  @apply overflow-x-hidden
+}
+body{
+  @apply font-poppins leading-normal bg-white text-bodyFontClr overflow-x-hidden
+}
+
+
+@layer utilities{
+    .section{
+        @apply py-[120px] md:py-[150px]
+    }
+    h1,h2,h3,h4{
+        @apply font-sora font-bold text-headerClr
+    }
+    h2{
+      @apply text-[32px] lg:text-5xl
+    }
+    h4{
+        @apply text-2xl font-semibold text-white text-balance
+    }
+    .btn-primary{
+        @apply bg-black text-white p-2 pr-7 flex items-center rounded-full gap-[10px] max-w-max font-medium hover:bg-white hover:text-neutral-950 transition-colors duration-300 border border-black
+    }
+    .container{
+        @apply px-4 md:px-8 xs:max-w-[520px] sm:max-w-[740px] md:max-w-[960px] lg:max-w-[1150px] xl:max-w-[1350px] w-full mx-auto
+    }
+    .card:first-child{
+        @apply bg-primaryClr
+    }
+    .card:nth-child(2){
+        @apply bg-secondaryClr
+    }
+    .card:nth-child(3){
+        @apply bg-black
+    }
+}
+
+
+/* ********************
+    Home Page
+******************** */
+.header{
+    @apply fixed top-0 left-0 py-5 w-full z-10
+}
+.header.active{
+    @apply bg-white;
+    animation: slideIn forwards 0.5s;
+    box-shadow: 0 2px 0 #0002;
+}
+@keyframes slideIn{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.navbar{
+    @apply absolute top-0 left-0 bg-white w-full max-w-[300px] h-[100vh] p-7 lg:hidden translate-x-[-360px] transition-transform duration-500 z-10
+}
+.navbar.active{
+    @apply translate-x-0
+}
+.overlay{
+    @apply w-full bg-neutral-900/75 fixed top-0 left-0 h-[100vh] opacity-0 duration-500 pointer-events-none z-[9] lg:hidden
+}
+.overlay.active{
+    @apply opacity-100 pointer-events-auto
+}
+.who-we-are-banner img:first-child{
+    grid-column: -4/1;
+    grid-row: 1/ span 5;
+}
+.who-we-are-banner img:last-child{
+    grid-column: -1/7;
+    grid-row: 3/span 4;
+}
+
+
+@media (min-width:992px){
+    .team-card:nth-child(2n){
+        @apply mt-[60px]
+    }
+}
